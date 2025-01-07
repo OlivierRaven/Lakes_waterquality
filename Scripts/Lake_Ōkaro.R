@@ -33,6 +33,10 @@ Okaro_CTD_bouy <- list.files(path = "Data_raw/Okaro_bouy_profiles", pattern = "\
 Okaro_CTD_bouy <- bind_rows(lapply(Okaro_CTD_bouy, read.csv)) # make it into a DF
 
 # Bathymetry_Okaro2.0
+hypsograph_Okaro <- read_csv("Data_mod/hypsograph_data.csv")
+hypsograph_Okaro <- hypsograph_Okaro %>%
+  filter(lake_name == "Okaro")
+
 Rotlakes_bathymetry <- read_excel("Data_raw/Lake_bathmetry/Rotlakes_bathymetry.xls")
 Bathymetry_Okaro2.0 <- Rotlakes_bathymetry %>%
   filter(LAKE == "Okaro")%>%

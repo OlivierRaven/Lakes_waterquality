@@ -1,4 +1,4 @@
-# Lake bathemetry script
+# Lake bathemetry script 
 # Explanation of this script------------------------------------------------
 
 # This script continues form the LERNZmp one to make more bathemotry for all the lakes.
